@@ -9,7 +9,6 @@ class MasterMindSolver:
         self.secret_key = secret_key
         self.number_of_bits = len(secret_key)
         self.candidates = self.generate_bit_combinations(num_bits=self.number_of_bits)
-        # self.guess = random.choice(self.candidates)
         self.guess = None
 
 
