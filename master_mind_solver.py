@@ -1,4 +1,3 @@
-import copy
 import random
 from typing import List
 
@@ -10,7 +9,6 @@ class MasterMindSolver:
         self.number_of_bits = len(secret_key)
         self.candidates = self.generate_bit_combinations(num_bits=self.number_of_bits)
         self.guess = None
-
 
 
     def generate_bit_combinations(self, num_bits: int, prefix=[], combinations=[]) -> List[list]:
@@ -74,6 +72,7 @@ class MasterMindSolver:
                     if guess_candidate_diff == 0:
                         break
 
+
     def shorten_candidates_with_amp(self) -> dict:
         vector_counts = {}
         for vector in self.candidates:
@@ -89,9 +88,3 @@ class MasterMindSolver:
         vector_counts_after_removal = {tuple(vector): vector_counts[tuple(vector)] for vector in self.candidates}
 
         return vector_counts_after_removal
-
-
-
-
-
-
