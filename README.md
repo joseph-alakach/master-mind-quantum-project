@@ -11,3 +11,5 @@ NOTE: the algorithm can get stuck in an infinite while loop, when that happens j
 most of the time it will find the secret key.
 
 Link to the 3 bit master mind game solving example using excel: https://docs.google.com/spreadsheets/d/1q7s2naQEA0WOCHGawea_i7J8P2qSzUGq1v74WYhcRCs/edit#gid=1428463762
+
+# check the deliverables.pdf and the solving_mastermind.pdf for the submission papers
